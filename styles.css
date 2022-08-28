@@ -1,0 +1,52 @@
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+header {
+    text-align: center;
+}
+
+
+#gridContainer {
+    margin-top: 2rem;
+    display: grid;
+    background-color: beige;
+    width: 30rem;
+    height: 30rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.gridItem {
+    border: 1px  solid black;
+    
+    
+}
+
+.gridItemX {
+    background-image: url(xImg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gridItemO {
+    background-image: url(oImg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.gridItemSelectable:hover {
+    border: 2px solid red;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+
